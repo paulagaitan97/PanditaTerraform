@@ -4,12 +4,6 @@
 # https://aka.ms/yaml
 # Terraform task https://marketplace.visualstudio.com/items?itemName=charleszipp.azure-pipelines-tasks-terraform
 # https://learn.microsoft.com/es-es/azure/devops/pipelines/library/connect-to-azure?view=azure-devops&WT.mc_id=AZ-MVP-5004321
-trigger:
-- none
-
-pool:
-  vmImage: ubuntu-latest
-  # vmImage: macOS-latest
 
 steps:
 - task: TerraformInstaller@0
