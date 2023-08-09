@@ -14,7 +14,8 @@ steps:
 - task: TerraformCLI@0
   displayName: Install Dependencies
   inputs:
-    command: init -lock=false
+    command: init
+    commandOptions: '-lock=false'
   env:
     ARM_CLIENT_ID: $(ARM_CLIENT_ID)
     ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
