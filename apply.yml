@@ -26,6 +26,7 @@ steps:
   displayName: Apply Changes
   inputs:
     command: apply
+    commandOptions: '-lock=false'
   env:
     ARM_CLIENT_ID: $(ARM_CLIENT_ID)
     ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
